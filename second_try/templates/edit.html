@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {% load staticfiles %}
+        <title>Employee records</title>
+    </head>   
+<body>
+        <link rel = "stylesheet" type="text/css" href="{% static 'css/form_crud.css' %} "type="text/css">
+        <h1>Update Form</h1>
+    <form method="POST" class="box" action="/update/{{employee.id}}">
+        {% csrf_token %}
+        <div class="form-group row">
+            <label >
+                Employee Id {{form.eid}}
+                <div class="form-group row">
+                <input type="text" name="eid" id="id_eid" required max="20" value="{{employee.eid}}"/>
+            </div>
+            </label >
+            <label>
+            Email {{form.email}}
+            <input type="text" name="email" id="id_email" required max="200" value="{{employee.email}}"/>
+            </label>
+            <label>
+                Full Name {{form.ename}}
+                <input type="text" name="ename" id="id_name" required max="200" value="{{employee.ename}}"/>
+            </label>
+            <label>
+                Date of Birth {{form.edateofbirth}}
+                <input type="text" name="edateofbirth" id="id_edateofbirth" required max="200" value="{{employee.edateofbirth}}"/>
+            </label>
+            <label>
+                <br>
+                <input type="submit"  class="btn btn-success" value="send">
+                <center><a input type="POST"  class="btn btn-success" value="send"  class="btn btn-primary" href="show"></a></center>
+                <br>
+            </label>
+            </div>
+        </form>
+</html>

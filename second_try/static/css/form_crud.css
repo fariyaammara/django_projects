@@ -1,0 +1,116 @@
+.glitch-effect
+{  border: groove;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+    font-size:50px;
+    font-weight: 900;
+    text-decoration: navy;
+    color: white;
+    display: inline-block;
+    background-size: 120% 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    -ms-background-clip: text;
+    -ms-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(45deg, 
+                    #7794ff, 
+                    #44107A,
+                    #FF1361,
+                    #FFF800);
+    animation: .2s shake infinite alternate;
+}
+#my{
+    box-align: center;
+}
+@keyframes shake {
+0% { transform: skewX(-15deg); }
+5% { transform: skewX(15deg); }
+10% { transform: skewX(-15deg); }
+15% { transform: skewX(15deg); }
+20% { transform: skewX(0deg); }
+100% { transform: skewX(0deg); }  
+}
+
+body{
+    background-image: linear-gradient(rgba(100, 96, 96, 0.473),rgba(70, 63, 63, 0.527)),url("4096224-rapunzel-wallpaper.jpg");
+    background-size: auto;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+}
+.box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background: rgb(57, 46, 104);
+    text-align: center;
+
+}
+.box input[type="email"],.box input[type="text"],.box input[type="number"],.box input[type="datetime-local"]{
+    border: tomato;
+    background:none;
+    display:block;
+    margin: 5px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 8px 8px;
+    width:250px;
+    outline: none;
+    color: white;
+    border-radius: 30px;
+    transition: 0.25s;
+
+}
+.box input[type="text"]:focus,.box input[type="email"]:focus,.box input[type="number"]:focus,.box input[type="datetime-local"]:focus{
+    width: 280px;
+    border-color: rgb(163, 170, 62);
+}
+.box input[type="submit"]{
+    border: tomato;
+    background:none;
+    display:block;
+    margin: 5px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 6px 4px;
+    width:200px;
+    outline: none;
+    color:rgb(101, 101, 139);
+    border-radius: 30px;
+    transition: 0.25s; 
+    cursor: pointer;
+}
+.box input[type="submit"]:hover{
+    background-color:rgb(104, 85, 117)
+}  
+p{
+    text-align: center;
+    color:black;
+    font-size: large;
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+label{
+    table-layout: fixed;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.container {
+  width: 5000px;
+  clear: both;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
+}

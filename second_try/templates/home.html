@@ -1,0 +1,44 @@
+{% load static %}
+<html>
+    <headd>
+        <title>Raacom Infosystems</title>
+        {% load staticfiles %}
+    </headd>
+    <body>
+        <h1>
+            <link rel = "stylesheet" type="text/css" href="{% static 'css/form_crud.css' %} "type="text/css">
+            Login Form
+            
+        </h1>
+        <p>
+            Please fill the below details
+        </p>
+        <form class="box" action="/emp" method="POST">
+            {% csrf_token %}
+            <div class="form-group row">
+            <label >
+
+                Employee Id {{form.eid}}
+            </label >
+            
+            <label>
+            Email {{form.email}}
+            </label>
+            
+            <label>
+                Full Name {{form.ename}}
+            </label>
+            
+            <label>
+                Date of Birth {{form.edateofbirth}}
+            </label>
+            <label>
+                <br>
+                <input type="submit"  class="btn btn-success" value="send">
+                <center><a input type="POST"  class="btn btn-success" value="send"  class="btn btn-primary" href="show"></a></center>
+                <br>
+            </label>
+            </div>
+        </form>
+       
+</html>

@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+    <headd>
+        <title>Raacom Infosystems</title>
+    </headd>
+    <body>
+        <h1>
+            <link rel = "stylesheet" type="text/css" href="{% static 'css/Form.css' %} "type="text/css">
+            Login Form
+            
+        </h1>
+        <p>
+            Please fill the below details
+        </p>
+        <div
+            align="center">
+        <form class="box" action="form.html" method="post">
+            <label>
+            Email <input type="email" placeholder="Email">
+            </label>
+            <label>
+                Full Name <input type="text" placeholder="Name">
+            </label>
+            <label>
+                Age <input type="number" placeholder="Age">
+            </label>
+            <label>
+                Date of Birth <input type="datetime-local" name="Birth">
+            </label>
+            <label>
+                <br>
+                <input type="submit"  value="send">
+                <br>
+            </label>
+            </div>
+        </form>
+    </body>
+</html>
